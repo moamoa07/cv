@@ -67,6 +67,14 @@ h1 {
 }
 
 /* cards */
+.cardcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
 .card {
     transition: 0.3s;
     width: 18rem;
