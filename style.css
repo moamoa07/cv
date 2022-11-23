@@ -141,7 +141,7 @@ h1 {
     padding: 0.125rem 1rem;
 }
 
-.card img {
+.card .mainimage {
     width: 18rem;
     height: 17rem;
     object-fit: cover;
@@ -168,9 +168,15 @@ h1 {
 }
 
 
-.contentwhenbigger img {
-    width: 4rem;
+.contentwhenbigger .bigimage {
+    width: 20rem;
     height: 3rem;
     border-radius: 0;
     margin: 0.5rem;
+}
+
+.contentwhenbigger .smallimage {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
 }
