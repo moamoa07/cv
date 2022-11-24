@@ -20,6 +20,10 @@ header {
     align-items: center;
 }
 
+.moamoa {
+    width: 3.5rem;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -32,6 +36,10 @@ li {
 li a {
     color: #120059;
     text-decoration: none;
+}
+
+.menu {
+    display: none;
 }
 
 /* main */
