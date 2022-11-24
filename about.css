@@ -1,0 +1,45 @@
+main {
+    width: 80%;
+}
+
+.afirstview {
+    height: calc(100vh - 6rem);
+    display: flex;
+    align-items: center;
+}
+
+.aimgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+}
+
+.imgflower {
+    width: 30rem;
+    position: absolute;
+    animation: spinright 40s linear infinite;
+}
+
+.imgmoa {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+.aabout {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 1.2rem;
+}
+
+.aabouttext {
+    width: 80%;
+    margin-top: 1rem;
+}
