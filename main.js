@@ -10,7 +10,7 @@ function addEventListeners() {
         card.addEventListener("click", makeCardBigger);
     }
     
-
+    
     const closeButton = document.getElementById("closecard");
     closeButton.addEventListener("click", makeCardSmaller);
 }

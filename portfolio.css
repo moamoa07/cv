@@ -48,3 +48,30 @@
     justify-content: center;
     align-items: center;
 }
+
+.ppflower {
+    width: 15%;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    z-index: 1;
+    animation: spinright 50s linear infinite;
+}
+
+.pgflower {
+    width: 10%;
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    z-index: 1;
+    animation: spinleft 50s linear infinite;
+}
+
+.pblueflower {
+    width: 15%;
+    position: absolute;
+    top: 98%;
+    left: 14%;
+    z-index: 1;
+    animation: spinleft 50s linear infinite;
+}
