@@ -5,48 +5,47 @@ function main() {
 }
 
 function addEventListeners() {
-    const card1 = document.getElementById("card1");
-    card1.addEventListener("click", makeCardBigger, makeCardSmaller);
+    const cards = document.querySelectorAll(".cardcontainer .card");
+    for (const card of cards) {
+        card.addEventListener("click", makeCardBigger);
+    }
+    
 
     const closeButton = document.getElementById("closecard");
     closeButton.addEventListener("click", makeCardSmaller);
 }
 
-function makeCardBigger() {
-    const card1 = document.getElementById("card1");
-    card1.style.height = "40rem"
-    card1.style.width = "80rem"
+function makeCardBigger(event) {
+    // const card1 = document.getElementById("card1");
+    // // card1.classList.add("open");
+    // card1.style.height = "40rem"
+    // card1.style.width = "80rem"
 
-    const moreContent = document.querySelector(".contentwhenbigger")
-    moreContent.style.display = "block"
+    // const moreContent = document.querySelector(".contentwhenbigger")
+    // moreContent.style.display = "block"
 
-    const card2 = document.getElementById("card2");
-    if (card2.style.display === "none") {
-        card2.style.display = null;
-    }
-    else {
-        card2.style.display = "none";
-    }
-    const card3 = document.getElementById("card3");
-    if (card3.style.display === "none") {
-        card3.style.display = null;
-    }
-    else {
-        card3.style.display = "none";
-    }
-    const card4 = document.getElementById("card4");
-    if (card4.style.display === "none") {
-        card4.style.display = null;
-    }
-    else {
-        card4.style.display = "none";
+    // Steg 1. Dölj alla korten
+    const cards = document.querySelectorAll(".cardcontainer .card");
+    for (const card of cards) {
+        card.classList.add("hidden");
     }
 
+    // Steg 2. Visa aktuellt kort i "stort läge"
+    const cardThatWasClickedOn = event.currentTarget;
+    cardThatWasClickedOn.classList.remove("hidden");
+    cardThatWasClickedOn.classList.add("large");
+    const contentwhenbigger = cardThatWasClickedOn.querySelector(".contentwhenbigger")
+    contentwhenbigger.classList.add("show")
 }
 
 function makeCardSmaller() {
-    const card1 = document.getElementById("card1");
-    card1.style.width = "18rem";
-    card1.style.height = "28rem"
-    console.log("hallå");
+    // const card1 = document.getElementById("card1");
+    // card1.style.width = "18rem";
+    // card1.style.height = "28rem"
+    // console.log("hallå");
+
+    const cards = document.querySelectorAll(".cardcontainer .card");
+    for (const card of cards) {
+        card.classList.remove("large");
+    }
 }

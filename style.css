@@ -168,7 +168,6 @@ h1 {
     margin: 1rem;
 }
 
-
 .contentwhenbigger .bigimage {
     width: 20rem;
     height: 3rem;
@@ -182,54 +181,50 @@ h1 {
     object-fit: cover;
 }
 
-
-/* portfolio styling */
-.pfirstview {
-    height: calc(100vh - 6rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pimage img{
-    width: 40rem;
-    height: 32rem;
-    object-fit: cover;
-    border-radius: 1.25rem 0 0 1.25rem;
-}
-
-.projectcontainer {
-    display: flex;
-    background-color: #E2D1FF;
-    border-radius: 1.25rem;
-    height: 32rem;
-}
-
-.ptextcontent {
-    margin: 1rem;
-}
-
-.ptextcontent h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.6rem;
-}
-
-.ptitlesubject {
-    display: flex;
-    align-items: center;
-}
-
-.ptextinfo {
-    margin-bottom: 0.6rem;
-}
-
-.ptextsubject {
-    font-size: 0.8rem;
-    margin-left: 4rem;
-}
-
-.psecondview {
+/* thirdview */
+.thirdview {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center
+}
+
+.bigcard {
+    width: 98%;
+    height: 80%;
+    background-color: #D7F0C8;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bctextcontent {
+    width: 80rem;
+}
+.bcsmallimg {
+    width: 60%;
+}
+.bcbigimg {
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 0 1.25rem 0 0;
+}
+
+.bcsmallimg img{
+    width: 20%;
+}
+
+/* classes to add in javascript */
+/* Class for making card size bigger */
+.large {
+    width: 100%;
+    height: 80%;
+}
+/* class to hide all cards */
+.hidden {
+    display: none;
+}
+/* class to show more content */
+.show {
+    display: block;
 }

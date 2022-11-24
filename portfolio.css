@@ -1,0 +1,50 @@
+/* portfolio styling */
+.pfirstview {
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pimage img{
+    width: 40rem;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+
+.projectcontainer {
+    display: flex;
+    background-color: #E2D1FF;
+    border-radius: 1.25rem;
+    height: 32rem;
+}
+
+.ptextcontent {
+    margin: 1rem;
+}
+
+.ptextcontent h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.ptitlesubject {
+    display: flex;
+    align-items: center;
+}
+
+.ptextinfo {
+    margin-bottom: 0.6rem;
+}
+
+.ptextsubject {
+    font-size: 0.8rem;
+    margin-left: 4rem;
+}
+
+.psecondview {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
