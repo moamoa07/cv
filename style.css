@@ -37,10 +37,9 @@ li a {
     color: #120059;
     text-decoration: none;
 }
+/* hamburger menu */
 
-.menu {
-    display: none;
-}
+
 
 /* main */
 main {

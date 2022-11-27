@@ -10,10 +10,19 @@ function addEventListeners() {
         card.addEventListener("click", makeCardBigger);
     }
     
-    
     const closeButton = document.getElementById("closecard");
     closeButton.addEventListener("click", makeCardSmaller);
+
+    const burgerButton = document.getElementById('burger');
+    burgerButton.onclick = toggleMenu;
 }
+
+// hamburger menu
+  function toggleMenu() {
+    const header = document.querySelector("header");
+    header.classList.toggle("open");
+}
+
 
 function makeCardBigger(event) {
     // const card1 = document.getElementById("card1");
