@@ -58,4 +58,45 @@
     .nav-menu.active {
         left: 0;
     }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .firstview p {
+        font-size: 1.5rem;
+    }
+
+    .purpleflower {
+        width: 50%;
+        top: 46%;
+        left: -10%;
+    }
+
+    .greenflower {
+        width: 30%;
+        top: 0%;
+        right: 6%;
+    }
+
+    .blueflower {
+        width: 60%;
+        top: 30%;
+        left: 10%;
+    }
+
+    .lightpurpleflower {
+        width: 30%;
+        right: 18%;
+    }
+
+    .card {
+        width: 8rem;
+        height: 18rem;
+    }
+
+    .card .mainimage {
+        width: 8rem;
+        height: 7rem;
+    }
 }
