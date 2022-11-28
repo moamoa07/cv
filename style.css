@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -37,7 +38,29 @@ li a {
     color: #120059;
     text-decoration: none;
 }
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav.link:hover {
+    color: #070022;
+}
 /* hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #120059;
+}
 
 
 

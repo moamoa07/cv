@@ -12,16 +12,21 @@ function addEventListeners() {
     
     const closeButton = document.getElementById("closecard");
     closeButton.addEventListener("click", makeCardSmaller);
-
-    const burgerButton = document.getElementById('burger');
-    burgerButton.onclick = toggleMenu;
 }
 
 // hamburger menu
-  function toggleMenu() {
-    const header = document.querySelector("header");
-    header.classList.toggle("open");
-}
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+})
 
 
 function makeCardBigger(event) {
