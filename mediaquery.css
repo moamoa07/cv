@@ -48,7 +48,7 @@
         right: -100%;
         top: 80px;
         flex-direction: column;
-        background-color: #120059;
+        background-color: #120059ba;
         width: 100%;
         text-align: center;
         color: #fff;
@@ -94,7 +94,7 @@
         right: 18%;
     }
 
-    .card {
+    /* .card {
         width: 8rem;
         height: 18rem;
     }
@@ -102,5 +102,5 @@
     .card .mainimage {
         width: 8rem;
         height: 7rem;
-    }
+    } */
 }

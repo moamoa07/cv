@@ -157,7 +157,7 @@ h1 {
     margin: 0 auto;
 }
 .card {
-    transition: 0.3s;
+    transition: 0.5s;
     width: 18rem;
     height: 28rem;
     margin: 1rem;
@@ -265,3 +265,7 @@ h1 {
 .show {
     display: block;
 }
+
+
+
+
