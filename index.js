@@ -47,7 +47,17 @@ function makeCardSmaller() {
     const cards = document.querySelectorAll(".cardcontainer .card");
     for (const card of cards) {
         card.classList.remove("large");
-        card.scrollLeft = window.innerWidth*0.8;
     }
+
+    const leftbutton = document.querySelector(".left");
+    const rightbutton = document.querySelector(".right");
+
+    leftbutton.onclick = () => {
+        document.querySelector(".cardcontainer").scrollLeft += 20;
+    };
+
+    rightbutton.onclick = () => {
+        document.querySelector(".cardcontainer").scrollRight += 20;
+    };
 
 }
