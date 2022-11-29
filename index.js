@@ -14,20 +14,6 @@ function addEventListeners() {
     closeButton.addEventListener("click", makeCardSmaller);
 }
 
-// hamburger menu
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click"), () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-})
-
 
 function makeCardBigger(event) {
     // const card1 = document.getElementById("card1");
@@ -41,15 +27,15 @@ function makeCardBigger(event) {
     // Steg 1. Dölj alla korten
     const cards = document.querySelectorAll(".cardcontainer .card");
     for (const card of cards) {
-        card.classList.add("hidden");
+        card.classList.toggle("hidden");
     }
 
     // Steg 2. Visa aktuellt kort i "stort läge"
     const cardThatWasClickedOn = event.currentTarget;
-    cardThatWasClickedOn.classList.remove("hidden");
-    cardThatWasClickedOn.classList.add("large");
+    cardThatWasClickedOn.classList.toggle("hidden");
+    cardThatWasClickedOn.classList.toggle("large");
     const contentwhenbigger = cardThatWasClickedOn.querySelector(".contentwhenbigger")
-    contentwhenbigger.classList.add("show")
+    contentwhenbigger.classList.toggle("show")
 }
 
 function makeCardSmaller() {
@@ -61,5 +47,7 @@ function makeCardSmaller() {
     const cards = document.querySelectorAll(".cardcontainer .card");
     for (const card of cards) {
         card.classList.remove("large");
+        card.scrollLeft = window.innerWidth*0.8;
     }
+
 }
