@@ -2,11 +2,11 @@
 .pfirstview {
     height: calc(100vh - 6rem);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .pimage img{
-    width: 40rem;
+    width: 100%;
     height: 32rem;
     object-fit: cover;
     border-radius: 1.25rem 0 0 1.25rem;
@@ -27,11 +27,7 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
-}
-
-.showproject {
-    margin-top: 13rem;
-    margin-right: 0;
+    justify-content: space-between;
 }
 
 .ptextcontent h3 {
@@ -41,8 +37,11 @@
 
 .ptitlesubject {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ptitlesubject h3 {
+    margin: 0;
 }
 
 .ptextinfo {
@@ -51,7 +50,7 @@
 
 .ptextsubject {
     font-size: 0.8rem;
-    margin-right: 1rem;
+    margin: 0.4rem 0;
 }
 
 .psecondview {
@@ -66,7 +65,7 @@
     position: absolute;
     top: 8%;
     left: 0%;
-    z-index: 1;
+    z-index: -1;
     animation: spinright 50s linear infinite;
 }
 
@@ -74,8 +73,8 @@
     width: 10%;
     position: absolute;
     top: 40%;
-    right: 2%;
-    z-index: 1;
+    right: 1.5%;
+    z-index: -1;
     animation: spinleft 50s linear infinite;
 }
 
@@ -84,6 +83,6 @@
     position: absolute;
     top: 98%;
     left: 14%;
-    z-index: 1;
+    z-index: -1;
     animation: spinleft 50s linear infinite;
 }
