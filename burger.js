@@ -1,10 +1,4 @@
-window.addEventListener("DOMContentLoaded", main);
-
-function main() {
-    addEventListeners();
-}
-
-function addEventListeners() {
+function setupBurgerMenu() {
     // hamburger menu
     const hamburger = document.getElementById("burger");
     const navMenu = document.getElementById("navmenu");
