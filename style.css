@@ -215,12 +215,17 @@ h1 {
 }
 
 .arrowbuttons {
+    color: #D3EAFF;
     display: flex;
     font-size: 1.5rem;
 }
 
 .left, .right {
     margin: 1rem;
+}
+
+.left:hover, .right:hover {
+    color: #bee0ff;
 }
 
 /* thirdview */
