@@ -82,6 +82,12 @@
     .ppflower, .pgflower, .pblueflower {
         display: none;
     }
+
+    /* about page */
+    .ainfocontent {
+        width: 45%;
+        left: 52%;
+    }
 }
 
 /* Mobile */

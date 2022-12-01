@@ -15,6 +15,7 @@ main {
     position: absolute;
     top: 20%;
     left: 40%;
+    width: 60%;
 }
 
 .aimgcontainer {
@@ -59,6 +60,6 @@ main {
 }
 
 .tools img {
-    width: 6%;
+    width: 3rem;
     margin-right: 0.4rem;
 }
