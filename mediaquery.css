@@ -50,11 +50,21 @@
 
     .bigcard {
         margin: 1rem;
-        height: 100%;
+    }
+
+    .bctextcontent {
+        width: 60%;
     }
 
     .bctextcontent h3 {
         font-size: 1.4rem;
+    }
+
+    .bcbigimg {
+        width: 40%;
+    }
+    .bcsmallimg {
+        width: 40%;
     }
 
     /* portfolio page */
@@ -155,7 +165,6 @@
     }
 
     .bigcard {
-        height: 90%;
         flex-direction: column;
     }
 
