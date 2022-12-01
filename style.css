@@ -269,8 +269,8 @@ h1 {
     background-color: #A18DF2;
     color: #FFF;
     border-radius: 1.25rem;
-    padding: 0.4rem;
-    margin: 0 0.4rem;
+    padding: 0.4rem 0;
+    margin: 0 0.4rem 0 0;
     text-align: center;
     width: 6rem;
     transition: ease 100ms;
@@ -284,24 +284,35 @@ h1 {
 .bcimages {
     width: 50%;
 }
-.bcsmallimg {
-    width: 20rem;
-    position: absolute;
-    right: 0;
-    top: 20rem;
-}
 .bcbigimg {
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
-    height: 20rem;
+    height: 60%;
     object-fit: cover;
     border-radius: 0 1.25rem 0 0;
 }
+.bcsmallimg {
+    display: flex;
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    top: 60%;
+}
 
 .bcsmallimg img{
-    width: 20%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.simgleft {
+    padding: 0.4rem 0.4rem 0 0;
+}
+.simgright {
+    border-radius: 0 0 1.25rem 0;
+    padding: 0.4rem 0 0 0;
 }
 
 /* footer */

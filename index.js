@@ -22,11 +22,14 @@ function addEventListeners() {
 
     rightbutton.onclick = () => {
         console.log('RIGHT');
-        document.querySelector(".cardcontainer").scrollLeft += 400;
+        document.querySelector(".cardcontainer").scrollLeft += window.innerWidth * 0.2;
     };
 }
 
-
+/**
+ * Funktion för att göra varje kort i karusellen större när man klickar på det, visar mer information och bilder.
+ * @param {*} event 
+ */
 function makeCardBigger(event) {
     // Steg 1. Dölj alla korten
     const cards = document.querySelectorAll(".cardcontainer .card");
@@ -39,7 +42,5 @@ function makeCardBigger(event) {
     cardThatWasClickedOn.classList.toggle("hidden");
     cardThatWasClickedOn.classList.toggle("large");
     const contentwhenbigger = cardThatWasClickedOn.querySelector(".contentwhenbigger")
-    contentwhenbigger.classList.toggle("show")
-
-    
+    contentwhenbigger.classList.toggle("show")    
 }
