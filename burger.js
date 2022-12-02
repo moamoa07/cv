@@ -1,3 +1,6 @@
+/**
+ * Function for hamburger menu in mobile view
+ */
 function setupBurgerMenu() {
     // hamburger menu
     const hamburger = document.getElementById("burger");
