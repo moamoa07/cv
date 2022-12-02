@@ -34,7 +34,7 @@ function addEventListeners() {
 
 /**
  * Function that makes every card bigger when clicked on, hides the cards that wasn't clicked on.
- * @param {*} event 
+ * @param {MouseEvent} event 
  */
 function makeCardBiggerAndSmaller(event) {
     // Steg 1. Dölj alla korten
