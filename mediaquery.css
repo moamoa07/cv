@@ -85,8 +85,26 @@
 
     /* about page */
     .ainfocontent {
-        width: 45%;
-        left: 52%;
+        width: 64%;
+        left: 36%;
+    }
+
+    .aimgcontainer {
+        left: 10%;
+        top: 45%;
+    }
+
+    .aabout h1 {
+        font-size: 3rem;
+    }
+
+    .imgflower {
+        width: 20rem;
+    }
+
+    .imgmoa {
+        width: 10rem;
+        height: 10rem;
     }
 }
 

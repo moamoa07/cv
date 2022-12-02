@@ -1,10 +1,16 @@
 window.addEventListener("DOMContentLoaded", main);
 
+/**
+ * Function that loads when the sites is loaded
+ */
 function main() {
     addEventListeners();
     setupBurgerMenu();
 }
 
+/**
+ * Function that adds eventlisteners to the page, on buttons and elements
+ */
 function addEventListeners() {
     const cards = document.querySelectorAll(".cardcontainer .card");
     for (const card of cards) {
@@ -27,7 +33,7 @@ function addEventListeners() {
 }
 
 /**
- * Funktion för att göra varje kort i karusellen större när man klickar på det, visar mer information och bilder.
+ * Function that makes every card bigger when clicked on, hides the cards that wasn't clicked on.
  * @param {*} event 
  */
 function makeCardBigger(event) {
