@@ -98,6 +98,10 @@
         font-size: 3rem;
     }
 
+    .aabouttext {
+        font-size: 1rem;
+    }
+
     .imgflower {
         width: 20rem;
     }
@@ -245,5 +249,41 @@
     }
     .ptext {
         font-size: 0.8rem;
+    }
+
+     /* about page */
+     .afirstview {
+        display: flex;
+        flex-direction: column;
+     }
+     .ainfocontent {
+        width: 90%;
+        left: 0%;
+        top: 36%;
+        margin: 1rem;
+    }
+
+    .aimgcontainer {
+        top: 20%;
+        left: 50%;
+        z-index: -1;
+    }
+
+    .aabout {
+        font-size: 1rem;
+    }
+
+    .aabout h1 {
+        font-size: 2rem;
+    }
+
+    .imgflower {
+        width: 15rem;
+
+    }
+
+    .imgmoa {
+        width: 8rem;
+        height: 8rem;
     }
 }
