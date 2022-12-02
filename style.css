@@ -62,8 +62,6 @@ li a {
     background-color: #120059;
 }
 
-
-
 /* main */
 main {
     width: 80%;
@@ -151,7 +149,6 @@ h1 {
 .cardcontainer {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     position: relative;
     overflow-x: scroll;
     margin: 0 auto;
@@ -161,7 +158,6 @@ h1 {
 .card {
     transition: 0.5s;
     width: 18rem;
-    /* height: 28rem; */
     margin: 1rem;
     background-color: #D7F0C8;
     border-radius: 1.25rem;
@@ -199,12 +195,6 @@ h1 {
     border-radius: 0;
 }
 
-.smallimage {
-    width: 5rem;
-    height: 5rem;
-    object-fit: cover;
-}
-
 .arrowbuttons {
     color: #D3EAFF;
     display: flex;
@@ -219,32 +209,6 @@ h1 {
 
 .left:hover, .right:hover {
     color: #bee0ff;
-}
-
-.projectlinkcontainer {
-    margin-top: 1rem;
-    width: 50%;
-    display: flex;
-}
-
-.projectlink {
-    background-color: #A18DF2;
-    color: #FFF;
-    border-radius: 1.25rem;
-    padding: 0.4rem 0;
-    margin: 0 0.4rem 0 0;
-    text-align: center;
-    width: 6rem;
-    transition: ease 100ms;
-}
-
-.projectlink a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.projectlink:hover {
-    background-color: #8c7adc;
 }
 
 /* css for card when large */
@@ -297,6 +261,33 @@ h1 {
 .large .projectlinkcontainer {
     display: flex;
 }
+
+.projectlinkcontainer {
+    margin-top: 1rem;
+    width: 50%;
+    display: flex;
+}
+
+.projectlink {
+    background-color: #A18DF2;
+    color: #FFF;
+    border-radius: 1.25rem;
+    padding: 0.4rem 0;
+    margin: 0 0.4rem 0 0;
+    text-align: center;
+    width: 6rem;
+    transition: ease 100ms;
+}
+
+.projectlink a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.projectlink:hover {
+    background-color: #8c7adc;
+}
+
 /* class to show more content */
 .show {
     display: block;
@@ -322,7 +313,6 @@ footer {
 }
 .ikon {
     width: 3.5rem;
-    color: #120059;
 }
 
 /* scrollbar */

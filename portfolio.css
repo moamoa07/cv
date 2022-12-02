@@ -24,7 +24,6 @@
     display: flex;
     background-color: #E2D1FF;
     border-radius: 1.25rem;
-    /* height: 32rem; */
     margin-top: 2rem;
 }
 
@@ -61,13 +60,6 @@
 .ptextsubject {
     font-size: 0.8rem;
     margin: 0.4rem 0;
-}
-
-.psecondview {
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .ppflower {
