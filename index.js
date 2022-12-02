@@ -14,7 +14,7 @@ function main() {
 function addEventListeners() {
     const cards = document.querySelectorAll(".cardcontainer .card");
     for (const card of cards) {
-        card.addEventListener("click", makeCardBigger);
+        card.addEventListener("click", makeCardBiggerAndSmaller);
     }
 
     // knappar för att klicka sig igenom korten 
@@ -36,7 +36,7 @@ function addEventListeners() {
  * Function that makes every card bigger when clicked on, hides the cards that wasn't clicked on.
  * @param {*} event 
  */
-function makeCardBigger(event) {
+function makeCardBiggerAndSmaller(event) {
     // Steg 1. Dölj alla korten
     const cards = document.querySelectorAll(".cardcontainer .card");
     for (const card of cards) {
@@ -46,7 +46,5 @@ function makeCardBigger(event) {
     // Steg 2. Visa aktuellt kort i "stort läge"
     const cardThatWasClickedOn = event.currentTarget;
     cardThatWasClickedOn.classList.toggle("hidden");
-    cardThatWasClickedOn.classList.toggle("large");
-    const contentwhenbigger = cardThatWasClickedOn.querySelector(".contentwhenbigger")
-    contentwhenbigger.classList.toggle("show")    
+    cardThatWasClickedOn.classList.toggle("large");  
 }
