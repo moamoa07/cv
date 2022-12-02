@@ -185,13 +185,12 @@ h1 {
 }
 
 .projectinfo {
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
 }
 
 .projectsubject {
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
     font-size: 0.8rem;
-    margin-bottom: 0.6rem;
 }
 
 .bigimage {
@@ -222,36 +221,6 @@ h1 {
     color: #bee0ff;
 }
 
-/* thirdview */
-/* .thirdview {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.bigcard {
-    width: 100%;
-    background-color: #D7F0C8;
-    border-radius: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-.bctextcontent {
-    padding: 1rem;
-    width: 50%;
-}
-
-.bctextcontent h3 {
-    font-size: 2rem;
-}
-
-.bcsubject {
-    font-size: 0.8rem;
-    margin: 0 0 0.8rem 0;
-} */
-
 .projectlinkcontainer {
     margin-top: 1rem;
     width: 50%;
@@ -269,50 +238,14 @@ h1 {
     transition: ease 100ms;
 }
 
+.projectlink a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 .projectlink:hover {
     background-color: #8c7adc;
 }
-
-/* 
-.bcimages {
-    width: 50%;
-}
-.bcbigimg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 0 1.25rem 0 0;
-}
-.bcsmallimg {
-    display: flex;
-    width: 50%;
-    height: 40%;
-    position: absolute;
-    right: 0;
-    top: 60%;
-}
-
-.bcsmallimg img{
-    width: 50%;
-    object-fit: cover;
-} */
-
-/* footer */
-footer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-.ikon {
-    width: 3.5rem;
-    color: #120059;
-}
-
 
 /* css for card when large */
 .large .simgleft {
@@ -378,6 +311,19 @@ footer {
     display: none;
 }
 
+/* footer */
+footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.ikon {
+    width: 3.5rem;
+    color: #120059;
+}
 
 /* scrollbar */
 ::-webkit-scrollbar {

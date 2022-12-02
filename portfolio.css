@@ -1,6 +1,6 @@
 /* portfolio styling */
 .pfirstview {
-    height: calc(100vh - 6rem);
+    height: calc(auto - 6rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,9 +10,12 @@
     font-size: 3.5rem;
 }
 
+.pimage {
+    flex: 1;
+}
 .pimage img{
     width: 100%;
-    height: 32rem;
+    height: 100%;
     object-fit: cover;
     border-radius: 1.25rem 0 0 1.25rem;
 }
@@ -21,7 +24,8 @@
     display: flex;
     background-color: #E2D1FF;
     border-radius: 1.25rem;
-    height: 32rem;
+    /* height: 32rem; */
+    margin-top: 2rem;
 }
 
 .projectcontainer:hover {
@@ -33,6 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 2;
 }
 
 .ptextcontent h3 {
@@ -59,7 +64,7 @@
 }
 
 .psecondview {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
